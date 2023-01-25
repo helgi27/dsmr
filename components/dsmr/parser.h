@@ -247,7 +247,7 @@ struct ObisIdParser {
     }
 
     if (res.next == str)
-      return res.fail(F("OBIS id Empty"), str);
+      return res.fail(F("OBIS id for OR is Empty"), str);
 
     for (++part; part < 6; ++part)
       id.v[part] = 255;
